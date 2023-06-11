@@ -1,0 +1,49 @@
+/*
+ *ITP121 INTEGRATIVE PROGRAMMING & TECHNOLOGIES Final / Project. 
+ *By: Ben Ryan Rinconada And Ian Remedio
+ */
+
+.btn{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+}
+
+.txtF{
+    -fx-background-color: white;
+    
+}
+
+.close_btn{
+     -fx-background-color: white;
+    
+}
+.close_btn:hover{
+     -fx-background-color: red;
+     
+  
+    
+}
+.close_btn:pressed{
+    -fx-background-color: white;
+    
+}
+.main_P{
+    -fx-background-color:white;
+}
+
+.left_panel{
+    -fx-background-color: #07223D;
+}
+.login_btn{
+     -fx-background-color: #10C6C6;
+     -fx-text-fill: white;
+}
+.login_btn:pressed{
+     -fx-background-color: white;
+     -fx-text-fill: rgb(56, 97, 192);
+}
+
+
+
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxperipheralinventorysystem.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" styleClass="main_P" stylesheets="@../CSS/Style.css">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="467.0" prefWidth="350.0" styleClass="left_panel">
+               <children>
+                  <AnchorPane layoutX="-3.0" layoutY="32.0" prefHeight="325.0" prefWidth="350.0">
+                     <children>
+                        <ImageView fitHeight="325.0" fitWidth="350.0" layoutX="3.0" layoutY="-2.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../IMG/LoginCover.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <Label layoutX="79.0" layoutY="381.0" text="Peripheral Inventory System" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="142.0" layoutY="349.0" prefHeight="32.0" prefWidth="77.0" text="BenIan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="351.0" prefHeight="459.0" prefWidth="350.0">
+               <children>
+                  <AnchorPane layoutX="124.0" layoutY="48.0" prefHeight="100.0" prefWidth="102.0">
+                     <children>
+                        <ImageView fitHeight="78.0" fitWidth="100.0" layoutX="11.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../IMG/icons8-person-96.png" />
+                           </image></ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="144.0" layoutY="157.0" prefHeight="21.0" prefWidth="62.0" text="Sign In" textFill="#07223d">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="userName" focusColor="#10c6c6" labelFloat="true" layoutX="65.0" layoutY="189.0" onAction="#LoginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                  <JFXPasswordField fx:id="password" focusColor="#10c6c6" labelFloat="true" layoutX="65.0" layoutY="251.0" onAction="#LoginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                  <JFXButton fx:id="login_btn" layoutX="103.0" layoutY="298.0" onAction="#LoginAdmin" prefHeight="30.0" prefWidth="147.0" ripplerFill="WHITE" styleClass="login_btn" stylesheets="@../CSS/Style.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></JFXButton>
+                  <Button fx:id="close" layoutX="315.0" layoutY="13.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="21.0" styleClass="close_btn" stylesheets="@../CSS/Style.css" textFill="RED" />
+                  <FontAwesomeIcon glyphName="CLOSE" layoutX="320.0" layoutY="29.0" wrappingWidth="11.428571701049805" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
